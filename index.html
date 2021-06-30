@@ -34,14 +34,14 @@
         </ul>
     </div>
     <br>
-   
+
     <ul class="list">
         <li><button id="formatBtn">格式化</button></li>
         <li><button id="copyBtn" class="copyBtn" data-clipboard-target="#txt">复制格式化后文本</button></li>
         <li><button id="clearBtn">清空文本框</button></li>
     </ul>
     <div id="iframeBox">
-        <iframe width="100%" height="500" src="https://base64.guru/converter/decode/audio">您的浏览器不支持 iframe,推荐使用 chrome 浏览器</iframe>
+        <iframe width="100%" height="700" src="https://base64.guru/converter/decode/audio">您的浏览器不支持 iframe,推荐使用 chrome 浏览器</iframe>
     </div>
 </body>
     <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
@@ -52,7 +52,7 @@
             var eleTxt = document.getElementById("txt");
             // 格式化
             formatBtn.onclick = function() {
-           
+
             var txt = eleTxt.value.replace(/"/g, "").split(",")[1];
              if(txt){
                 eleTxt.value = txt;
